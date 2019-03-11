@@ -11,6 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 基于 AFNetworking 的封装
 
+
 普通的post请求
 ```ruby
 +(void)postWithUrl:(NSString *)url
@@ -29,7 +30,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
              fail:(void(^)(NSError * error))fail;
 ```
 
-/*NSDictionary 转字符串post请求*/
+NSDictionary 转字符串post请求
 ```ruby
 +(void)postWithUrl:(NSString *)url
      AndJsonObject:(id)jsonObject
@@ -37,7 +38,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
               fail:(void (^)(NSError * error))fail;
 ```
 
-/*json 字符串post请求*/
+json 字符串post请求
 ```ruby
 +(void)postWithUrl:(NSString *)url
            AndJson:(NSString*)json
@@ -46,7 +47,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ```
 
 
-/*文件上传*/
+文件上传
 ```ruby
 +(void)uploadFileWithUrl:(NSString*)url
                    param:(id)param
