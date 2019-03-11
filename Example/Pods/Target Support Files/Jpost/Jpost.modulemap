@@ -1,0 +1,6 @@
+framework module Jpost {
+  umbrella header "Jpost-umbrella.h"
+
+  export *
+  module * { export * }
+}
