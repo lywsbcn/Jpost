@@ -5,9 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/Jpost.svg?style=flat)](https://cocoapods.org/pods/Jpost)
 [![Platform](https://img.shields.io/cocoapods/p/Jpost.svg?style=flat)](https://cocoapods.org/pods/Jpost)
 
-## Example
+## Use
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 基于 AFNetworking 的封装
 
@@ -69,6 +68,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'Jpost'
 ```
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Author
 
