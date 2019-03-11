@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Jpost_Tests' do
+  pod 'Jpost', :path => '../'
+  
+  
+end
