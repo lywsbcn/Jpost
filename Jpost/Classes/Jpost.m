@@ -8,6 +8,7 @@
 
 #import "Jpost.h"
 #import "AFHTTPSessionManager.h"
+#import "YYModel.h"
 
 #ifndef NDEBUG
 #define NLog(message, ...) printf("%s\n", [[NSString stringWithFormat:message, ##__VA_ARGS__] UTF8String])
@@ -103,8 +104,8 @@ static Jpost * jpostManager = nil;
      AndJsonObject:(id)jsonObject
            success:(void (^)(id))success
               fail:(void (^)(NSError *))fail{
-    
-    NSString * json = [[NSString alloc]initWithData:[NSJSONSerialization dataWithJSONObject:jsonObject options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSString * json =[jsonObject yy_modelToJSONString];
+//    NSString * json = [[NSString alloc]initWithData:[NSJSONSerialization dataWithJSONObject:jsonObject options:0 error:nil] encoding:NSUTF8StringEncoding];
     [self postWithUrl:url AndJson:json success:success fail:fail];
 }
 
